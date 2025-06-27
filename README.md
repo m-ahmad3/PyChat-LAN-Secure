@@ -1,9 +1,10 @@
-# PyChat Secure LAN Based Chat Room
+# PyChat - LAN Based Secure Chat Room
 
-A secure, encrypted group chat application built in Python with real-time messaging, file sharing, and comprehensive admin controls.
+A secure, encrypted group chat application designed for local area networks (LAN) built in Python with real-time messaging, file sharing, and comprehensive admin controls.
 
 ## 🔐 Features
 
+- **LAN-Optimized**: Designed specifically for local area network communication
 - **End-to-End Encryption**: All messages and files are encrypted using Fernet symmetric encryption
 - **Group Management**: Create and join chat groups with admin approval system
 - **Real-time Messaging**: Instant message delivery to all online group members
@@ -27,8 +28,8 @@ A secure, encrypted group chat application built in Python with real-time messag
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/pychat-secure.git
-cd pychat-secure
+git clone https://github.com/m-ahmad3/PyChat-LAN-Secure.git
+cd Pychat-LAN-Secure
 ```
 
 2. Install dependencies:
@@ -41,14 +42,18 @@ pip install cryptography
 1. **Start the server:**
 ```bash
 python Server.py <IP> <Port>
-# Example:
+# Example for LAN:
+python Server.py 192.168.1.100 8000
+# Or for local testing:
 python Server.py localhost 8000
 ```
 
 2. **Connect clients:**
 ```bash
 python Client.py <IP> <Port>
-# Example:
+# Example for LAN:
+python Client.py 192.168.1.100 8000
+# Or for local testing:
 python Client.py localhost 8000
 ```
 
